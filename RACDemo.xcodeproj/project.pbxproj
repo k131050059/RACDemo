@@ -81,7 +81,7 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
-		1F695D032282D9FF008250F2 /* MVVM */ = {
+		1F695D032282D9FF008250F2 /* MVVM+RAC */ = {
 			isa = PBXGroup;
 			children = (
 				1F695D072282DCFF008250F2 /* MVVMViewController.h */,
@@ -90,7 +90,7 @@
 				1F695D042282DCE9008250F2 /* View */,
 				1F695D052282DCE9008250F2 /* ViewModel */,
 			);
-			path = MVVM;
+			path = "MVVM+RAC";
 			sourceTree = "<group>";
 		};
 		1F695D042282DCE9008250F2 /* View */ = {
@@ -141,7 +141,7 @@
 		1F726657224A726F00BFF2A3 /* RACDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1F695D032282D9FF008250F2 /* MVVM */,
+				1F695D032282D9FF008250F2 /* MVVM+RAC */,
 				1F695D022282D9F8008250F2 /* MVP */,
 				1F695D012282D9EE008250F2 /* MVC */,
 				1F726658224A726F00BFF2A3 /* AppDelegate.h */,

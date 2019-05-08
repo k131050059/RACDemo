@@ -18,7 +18,12 @@
     }
     return self;
 }
-
+/*
+ VIEW 中的判断按钮是否可用逻辑 挪到VM中。 如果可用 通过RACCommand 发送出去。 VIEW 中监听了RACCommand信号
+ 
+ VIEW 中点击登录 网络请求逻辑 挪到VM中。 点击 通知VM 走登录逻辑 , 网络请求后 返回一个信号 给VIEW 
+ 
+ */
 
 - (void)initSubscribe {
     //监听 输入字段
