@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginView : UIView
 
+- (void)pushToMainController;
 @end
 
 NS_ASSUME_NONNULL_END

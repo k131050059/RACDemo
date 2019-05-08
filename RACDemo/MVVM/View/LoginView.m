@@ -24,10 +24,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setupViews];
-        
         //双向绑定
         [self initCommand];
-        
         //接收信号
         [self initSubscribe];
     }
@@ -60,7 +58,8 @@
             NSLog(@"执行完成");
         }
     }];
-    //监听数据回调
+    
+    //监听登录回调
     [[self.viewModel.loginActionCmd.executionSignals switchToLatest] subscribeNext:^(id  _Nullable x) {
         LoginViewModel *loginViewModel = x;
         if (!loginViewModel) {
@@ -74,7 +73,8 @@
         } else {
             self.lblResult.text = loginViewModel.loginModel.userId;
             NSLog(@"登录成功");
-            self.lblResult.text=@"登录成功";
+            self.lblResult.text=@"登录成功即将返回";
+            [self pushToMainController];
         }
     }];
 }
@@ -109,6 +109,7 @@
     [self.btnSubmit setBackgroundImage:[self createImageWithColor:[UIColor grayColor]] forState:UIControlStateDisabled];
     
     [[self.btnSubmit rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        //VM调用登录方法
         [self.viewModel.loginActionCmd execute:nil];
         
     }];

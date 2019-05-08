@@ -34,6 +34,12 @@
 
 - (void)setupViews {
     LoginView *lgview = [[LoginView alloc]initWithFrame:self.view.bounds];
+    
+    [[lgview rac_signalForSelector:@selector(pushToMainController)]subscribeNext:^(RACTuple * _Nullable x) {
+        sleep(3);
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    
     [self.view addSubview:lgview];
 }
 
