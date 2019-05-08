@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ReactiveObjC.h"
 #import "RacDelegateView.h"
+#import "MVVMViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -45,9 +47,12 @@
     [self.view addSubview:btn];
     
     [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        btn.frame=CGRectMake(200, 200, 50, 100);
+//        btn.frame=CGRectMake(200, 200, 50, 100);
         NSLog(@"%@ ==",x);
         NSLog(@"btn 点击");
+        MVVMViewController *vc = [[MVVMViewController alloc]init];
+  
+        [self.navigationController pushViewController:vc animated:YES];
     }];
     
     [[btn rac_valuesAndChangesForKeyPath:@"frame" options:(NSKeyValueObservingOptionNew) observer:self] subscribeNext:^(RACTwoTuple<id,NSDictionary *> * _Nullable x) {
@@ -69,7 +74,7 @@
     
     //代替通知  and j监听文本
     
-    UITextField *field = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 100, 50)];
+    UITextField *field = [[UITextField alloc]initWithFrame:CGRectMake(100, 20, 100, 50)];
     field.backgroundColor=[UIColor redColor];
     [self.view addSubview:field];
     

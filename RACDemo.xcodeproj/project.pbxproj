@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1770ECF45B095B96AC86F165 /* libPods-RACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8269734C6BA14308AEF3FF /* libPods-RACDemo.a */; };
+		1F606080228315EB003E720E /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60607F228315EB003E720E /* LoginView.m */; };
 		1F695D002282D401008250F2 /* RacDelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695CFF2282D401008250F2 /* RacDelegateView.m */; };
+		1F695D092282DCFF008250F2 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695D082282DCFF008250F2 /* MVVMViewController.m */; };
+		1F695D1522830ECE008250F2 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695D1422830ECE008250F2 /* LoginViewModel.m */; };
+		1F695D1822830F2D008250F2 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695D1722830F2D008250F2 /* LoginModel.m */; };
 		1F72665A224A726F00BFF2A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F726659224A726F00BFF2A3 /* AppDelegate.m */; };
 		1F72665D224A726F00BFF2A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F72665C224A726F00BFF2A3 /* ViewController.m */; };
 		1F726660224A726F00BFF2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F72665E224A726F00BFF2A3 /* Main.storyboard */; };
@@ -19,8 +23,16 @@
 
 /* Begin PBXFileReference section */
 		0293F56524FF22C576D93E0B /* Pods-RACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1F60607E228315EB003E720E /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		1F60607F228315EB003E720E /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		1F695CFE2282D401008250F2 /* RacDelegateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RacDelegateView.h; path = ../../Desktop/RacDelegateView.h; sourceTree = "<group>"; };
 		1F695CFF2282D401008250F2 /* RacDelegateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RacDelegateView.m; path = ../../Desktop/RacDelegateView.m; sourceTree = "<group>"; };
+		1F695D072282DCFF008250F2 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		1F695D082282DCFF008250F2 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		1F695D1322830ECE008250F2 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		1F695D1422830ECE008250F2 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		1F695D1622830F2D008250F2 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		1F695D1722830F2D008250F2 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		1F726655224A726F00BFF2A3 /* RACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F726658224A726F00BFF2A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F726659224A726F00BFF2A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,8 +84,40 @@
 		1F695D032282D9FF008250F2 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1F695D072282DCFF008250F2 /* MVVMViewController.h */,
+				1F695D082282DCFF008250F2 /* MVVMViewController.m */,
+				1F695D062282DCE9008250F2 /* Model */,
+				1F695D042282DCE9008250F2 /* View */,
+				1F695D052282DCE9008250F2 /* ViewModel */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		1F695D042282DCE9008250F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F60607E228315EB003E720E /* LoginView.h */,
+				1F60607F228315EB003E720E /* LoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F695D052282DCE9008250F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F695D1322830ECE008250F2 /* LoginViewModel.h */,
+				1F695D1422830ECE008250F2 /* LoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F695D062282DCE9008250F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F695D1622830F2D008250F2 /* LoginModel.h */,
+				1F695D1722830F2D008250F2 /* LoginModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1F72664C224A726F00BFF2A3 = {
@@ -220,10 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F695D092282DCFF008250F2 /* MVVMViewController.m in Sources */,
 				1F695D002282D401008250F2 /* RacDelegateView.m in Sources */,
+				1F606080228315EB003E720E /* LoginView.m in Sources */,
 				1F72665D224A726F00BFF2A3 /* ViewController.m in Sources */,
 				1F726668224A727600BFF2A3 /* main.m in Sources */,
 				1F72665A224A726F00BFF2A3 /* AppDelegate.m in Sources */,
+				1F695D1522830ECE008250F2 /* LoginViewModel.m in Sources */,
+				1F695D1822830F2D008250F2 /* LoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
