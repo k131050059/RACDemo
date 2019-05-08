@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1770ECF45B095B96AC86F165 /* libPods-RACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8269734C6BA14308AEF3FF /* libPods-RACDemo.a */; };
+		1F695D002282D401008250F2 /* RacDelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695CFF2282D401008250F2 /* RacDelegateView.m */; };
 		1F72665A224A726F00BFF2A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F726659224A726F00BFF2A3 /* AppDelegate.m */; };
 		1F72665D224A726F00BFF2A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F72665C224A726F00BFF2A3 /* ViewController.m */; };
 		1F726660224A726F00BFF2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F72665E224A726F00BFF2A3 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		0293F56524FF22C576D93E0B /* Pods-RACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1F695CFE2282D401008250F2 /* RacDelegateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RacDelegateView.h; path = ../../Desktop/RacDelegateView.h; sourceTree = "<group>"; };
+		1F695CFF2282D401008250F2 /* RacDelegateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RacDelegateView.m; path = ../../Desktop/RacDelegateView.m; sourceTree = "<group>"; };
 		1F726655224A726F00BFF2A3 /* RACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F726658224A726F00BFF2A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F726659224A726F00BFF2A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				1F726659224A726F00BFF2A3 /* AppDelegate.m */,
 				1F72665B224A726F00BFF2A3 /* ViewController.h */,
 				1F72665C224A726F00BFF2A3 /* ViewController.m */,
+				1F695CFE2282D401008250F2 /* RacDelegateView.h */,
+				1F695CFF2282D401008250F2 /* RacDelegateView.m */,
 				1F72665E224A726F00BFF2A3 /* Main.storyboard */,
 				1F726661224A727600BFF2A3 /* Assets.xcassets */,
 				1F726663224A727600BFF2A3 /* LaunchScreen.storyboard */,
@@ -191,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F695D002282D401008250F2 /* RacDelegateView.m in Sources */,
 				1F72665D224A726F00BFF2A3 /* ViewController.m in Sources */,
 				1F726668224A727600BFF2A3 /* main.m in Sources */,
 				1F72665A224A726F00BFF2A3 /* AppDelegate.m in Sources */,
