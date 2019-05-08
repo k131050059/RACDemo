@@ -12,12 +12,7 @@
 #import "LoginView.h"
 @interface MVVMViewController ()
 //VC 持有 view 和vm
-@property (strong, nonatomic)  UITextField *txtAccount;
-@property (strong, nonatomic)  UITextField *txtPwd;
-@property (strong, nonatomic)  UIButton *btnSubmit;
-@property (strong, nonatomic)  UILabel *lblResult;
-
-@property (strong,nonatomic) LoginViewModel *viewModel;
+ 
 
 @end
 

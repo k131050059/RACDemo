@@ -10,6 +10,7 @@
 #import "ReactiveObjC.h"
 #import "RacDelegateView.h"
 #import "MVVMViewController.h"
+#import "MVP/View/MVPViewController.h"
 
 @interface ViewController ()
 
@@ -60,9 +61,24 @@
         NSLog(@"frame改变了%@",x);
     }] ;
     
+    {
+        
+        UIButton *btn =[[UIButton alloc]initWithFrame:CGRectMake(100, 200, 100, 50)];
+        btn.backgroundColor = [UIColor redColor];
+        [btn setTitle:@"MVP" forState:UIControlStateNormal];
+        [self.view addSubview:btn];
+        [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+   
+            MVPViewController *vc = [[MVPViewController alloc]init];
+            
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+    }
+    
     //代理
     RacDelegateView *deleView = [[RacDelegateView alloc]initWithFrame:CGRectMake(0, 220, self.view.frame.size.width, self.view.frame.size.height-120)];
-    [self.view addSubview:deleView];
+//    [self.view addSubview:deleView];
     [deleView.btnClickSingle subscribeNext:^(id  _Nullable x) {
         NSLog(@"点击按钮%@ ",x);
     }];
