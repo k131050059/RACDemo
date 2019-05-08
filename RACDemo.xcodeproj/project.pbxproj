@@ -55,6 +55,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1F695D012282D9EE008250F2 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		1F695D022282D9F8008250F2 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		1F695D032282D9FF008250F2 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 		1F72664C224A726F00BFF2A3 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +97,9 @@
 		1F726657224A726F00BFF2A3 /* RACDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F695D032282D9FF008250F2 /* MVVM */,
+				1F695D022282D9F8008250F2 /* MVP */,
+				1F695D012282D9EE008250F2 /* MVC */,
 				1F726658224A726F00BFF2A3 /* AppDelegate.h */,
 				1F726659224A726F00BFF2A3 /* AppDelegate.m */,
 				1F72665B224A726F00BFF2A3 /* ViewController.h */,
