@@ -10,7 +10,9 @@
 #import "MVPresenter.h"
 #import "MVProtocal.h"
 #import "MVPLoginView.h"
-@interface MVPViewController()<MVProtocal,UITableViewDataSource,UITableViewDelegate>
+@interface MVPViewController()<MVProtocal,UITableViewDataSource,UITableViewDelegate>{
+  
+}
 
 @property(nonatomic,strong) NSArray *dataArr;
 @property(nonatomic,strong) UITableView *tableView;

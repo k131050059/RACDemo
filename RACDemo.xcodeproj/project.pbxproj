@@ -13,7 +13,6 @@
 		1F60608922832A3A003E720E /* MVPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60608822832A3A003E720E /* MVPresenter.m */; };
 		1F60608C22832A4E003E720E /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60608B22832A4E003E720E /* MVPViewController.m */; };
 		1F606090228336DA003E720E /* MVPLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60608F228336DA003E720E /* MVPLoginView.m */; };
-		1F695D002282D401008250F2 /* RacDelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695CFF2282D401008250F2 /* RacDelegateView.m */; };
 		1F695D092282DCFF008250F2 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695D082282DCFF008250F2 /* MVVMViewController.m */; };
 		1F695D1522830ECE008250F2 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695D1422830ECE008250F2 /* LoginViewModel.m */; };
 		1F695D1822830F2D008250F2 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F695D1722830F2D008250F2 /* LoginModel.m */; };
@@ -23,6 +22,8 @@
 		1F726662224A727600BFF2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F726661224A727600BFF2A3 /* Assets.xcassets */; };
 		1F726665224A727600BFF2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F726663224A727600BFF2A3 /* LaunchScreen.storyboard */; };
 		1F726668224A727600BFF2A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F726667224A727600BFF2A3 /* main.m */; };
+		1F8BB90F2286E77B00806AE8 /* RacDelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB90D2286E77B00806AE8 /* RacDelegateView.m */; };
+		1F8BB9122287A80600806AE8 /* shareinstane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB9112287A80600806AE8 /* shareinstane.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,6 @@
 		1F60608D22832A6C003E720E /* MVProtocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVProtocal.h; sourceTree = "<group>"; };
 		1F60608E228336DA003E720E /* MVPLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPLoginView.h; sourceTree = "<group>"; };
 		1F60608F228336DA003E720E /* MVPLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPLoginView.m; sourceTree = "<group>"; };
-		1F695CFE2282D401008250F2 /* RacDelegateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RacDelegateView.h; path = ../../Desktop/RacDelegateView.h; sourceTree = "<group>"; };
-		1F695CFF2282D401008250F2 /* RacDelegateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RacDelegateView.m; path = ../../Desktop/RacDelegateView.m; sourceTree = "<group>"; };
 		1F695D072282DCFF008250F2 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
 		1F695D082282DCFF008250F2 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
 		1F695D1322830ECE008250F2 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
@@ -56,6 +55,10 @@
 		1F726664224A727600BFF2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F726666224A727600BFF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F726667224A727600BFF2A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F8BB90D2286E77B00806AE8 /* RacDelegateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacDelegateView.m; sourceTree = "<group>"; };
+		1F8BB90E2286E77B00806AE8 /* RacDelegateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacDelegateView.h; sourceTree = "<group>"; };
+		1F8BB9102287A80600806AE8 /* shareinstane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shareinstane.h; sourceTree = "<group>"; };
+		1F8BB9112287A80600806AE8 /* shareinstane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareinstane.m; sourceTree = "<group>"; };
 		4E8269734C6BA14308AEF3FF /* libPods-RACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDF4F24E8CAA9FE375C8502 /* Pods-RACDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,8 +197,10 @@
 				1F726659224A726F00BFF2A3 /* AppDelegate.m */,
 				1F72665B224A726F00BFF2A3 /* ViewController.h */,
 				1F72665C224A726F00BFF2A3 /* ViewController.m */,
-				1F695CFE2282D401008250F2 /* RacDelegateView.h */,
-				1F695CFF2282D401008250F2 /* RacDelegateView.m */,
+				1F8BB90E2286E77B00806AE8 /* RacDelegateView.h */,
+				1F8BB90D2286E77B00806AE8 /* RacDelegateView.m */,
+				1F8BB9102287A80600806AE8 /* shareinstane.h */,
+				1F8BB9112287A80600806AE8 /* shareinstane.m */,
 				1F72665E224A726F00BFF2A3 /* Main.storyboard */,
 				1F726661224A727600BFF2A3 /* Assets.xcassets */,
 				1F726663224A727600BFF2A3 /* LaunchScreen.storyboard */,
@@ -311,14 +316,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F695D092282DCFF008250F2 /* MVVMViewController.m in Sources */,
-				1F695D002282D401008250F2 /* RacDelegateView.m in Sources */,
 				1F606080228315EB003E720E /* LoginView.m in Sources */,
 				1F72665D224A726F00BFF2A3 /* ViewController.m in Sources */,
 				1F726668224A727600BFF2A3 /* main.m in Sources */,
 				1F60608622832A24003E720E /* MVPModel.m in Sources */,
 				1F72665A224A726F00BFF2A3 /* AppDelegate.m in Sources */,
 				1F695D1522830ECE008250F2 /* LoginViewModel.m in Sources */,
+				1F8BB9122287A80600806AE8 /* shareinstane.m in Sources */,
 				1F606090228336DA003E720E /* MVPLoginView.m in Sources */,
+				1F8BB90F2286E77B00806AE8 /* RacDelegateView.m in Sources */,
 				1F60608C22832A4E003E720E /* MVPViewController.m in Sources */,
 				1F695D1822830F2D008250F2 /* LoginModel.m in Sources */,
 				1F60608922832A3A003E720E /* MVPresenter.m in Sources */,

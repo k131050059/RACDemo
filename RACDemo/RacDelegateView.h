@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ReactiveObjC.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RacDelegateView : UIView
 @property (nonatomic,strong) RACSubject *btnClickSingle;
-
--(void)sendValue:(NSString*)str dic:(NSDictionary*)dic;
+    -(void)sendValue:(NSString*)str dic:(NSDictionary*)dic;
 @end
 
 NS_ASSUME_NONNULL_END

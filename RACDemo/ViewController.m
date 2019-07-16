@@ -11,7 +11,7 @@
 #import "RacDelegateView.h"
 #import "MVVMViewController.h"
 #import "MVP/View/MVPViewController.h"
-
+#import "shareinstane.h"
 @interface ViewController ()
 
 @end
@@ -51,9 +51,10 @@
 //        btn.frame=CGRectMake(200, 200, 50, 100);
         NSLog(@"%@ ==",x);
         NSLog(@"btn 点击");
-        MVVMViewController *vc = [[MVVMViewController alloc]init];
-  
-        [self.navigationController pushViewController:vc animated:YES];
+//        MVVMViewController *vc = [[MVVMViewController alloc]init];
+//
+//        [self.navigationController pushViewController:vc animated:YES];
+        [[shareinstane sharedManager] logsomething];
     }];
     
     [[btn rac_valuesAndChangesForKeyPath:@"frame" options:(NSKeyValueObservingOptionNew) observer:self] subscribeNext:^(RACTwoTuple<id,NSDictionary *> * _Nullable x) {
