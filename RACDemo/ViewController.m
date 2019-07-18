@@ -79,7 +79,7 @@
     
     //代理
     RacDelegateView *deleView = [[RacDelegateView alloc]initWithFrame:CGRectMake(0, 220, self.view.frame.size.width, self.view.frame.size.height-120)];
-//    [self.view addSubview:deleView];
+    [self.view addSubview:deleView];
     [deleView.btnClickSingle subscribeNext:^(id  _Nullable x) {
         NSLog(@"点击按钮%@ ",x);
     }];

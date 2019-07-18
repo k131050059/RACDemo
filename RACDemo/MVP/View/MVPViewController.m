@@ -10,6 +10,8 @@
 #import "MVPresenter.h"
 #import "MVProtocal.h"
 #import "MVPLoginView.h"
+#import "RACTestViewController.h"
+
 @interface MVPViewController()<MVProtocal,UITableViewDataSource,UITableViewDelegate>{
   
 }
@@ -57,7 +59,10 @@
     
 }
 - (void)loginSuccess{
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
+    RACTestViewController *text =[[RACTestViewController alloc]init];
+    [self.navigationController pushViewController:text animated:YES];
+    
 }
 - (UIColor*)randomColor{
     CGFloat hue = (arc4random() %256/256.0);

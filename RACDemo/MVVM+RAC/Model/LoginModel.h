@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginModel : NSObject
+@interface LoginModel<ObjectType> : NSObject
+
+@property (nonatomic, strong) ObjectType language;
 
 @property (strong, nonatomic) NSString *userId;
 @property (strong, nonatomic) NSString *displayName;

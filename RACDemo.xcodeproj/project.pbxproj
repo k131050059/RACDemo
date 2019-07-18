@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1770ECF45B095B96AC86F165 /* libPods-RACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8269734C6BA14308AEF3FF /* libPods-RACDemo.a */; };
+		1F031BAC22DEF44F004B0DBC /* RACTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F031BAB22DEF44F004B0DBC /* RACTestViewController.m */; };
 		1F606080228315EB003E720E /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60607F228315EB003E720E /* LoginView.m */; };
 		1F60608622832A24003E720E /* MVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60608522832A24003E720E /* MVPModel.m */; };
 		1F60608922832A3A003E720E /* MVPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F60608822832A3A003E720E /* MVPresenter.m */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0293F56524FF22C576D93E0B /* Pods-RACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1F031BAA22DEF44F004B0DBC /* RACTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTestViewController.h; sourceTree = "<group>"; };
+		1F031BAB22DEF44F004B0DBC /* RACTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTestViewController.m; sourceTree = "<group>"; };
 		1F60607E228315EB003E720E /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		1F60607F228315EB003E720E /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		1F60608422832A24003E720E /* MVPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPModel.h; sourceTree = "<group>"; };
@@ -83,6 +86,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1F031BA922DEF40F004B0DBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F031BAA22DEF44F004B0DBC /* RACTestViewController.h */,
+				1F031BAB22DEF44F004B0DBC /* RACTestViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1F60608122832A0B003E720E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 				1F60608122832A0B003E720E /* View */,
 				1F60608222832A0B003E720E /* Model */,
 				1F60608322832A0B003E720E /* Presenter */,
+				1F031BA922DEF40F004B0DBC /* Controller */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -318,6 +331,7 @@
 				1F695D092282DCFF008250F2 /* MVVMViewController.m in Sources */,
 				1F606080228315EB003E720E /* LoginView.m in Sources */,
 				1F72665D224A726F00BFF2A3 /* ViewController.m in Sources */,
+				1F031BAC22DEF44F004B0DBC /* RACTestViewController.m in Sources */,
 				1F726668224A727600BFF2A3 /* main.m in Sources */,
 				1F60608622832A24003E720E /* MVPModel.m in Sources */,
 				1F72665A224A726F00BFF2A3 /* AppDelegate.m in Sources */,

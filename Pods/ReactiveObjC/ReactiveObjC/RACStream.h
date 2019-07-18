@@ -19,8 +19,17 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// When subclassing RACStream, only the methods in the main @interface body need
 /// to be overridden.
+/*
+ __covariant(协变):用于泛型数据强转类型，可以向上强转，子类可以转成父类。
+ __contravariant(逆变):用于泛型数据强转类型，可以向下强转，父类可以转成子类。
+ */
+// __covariant 协变，子类转父类；泛型名字是ValueType
 @interface RACStream<__covariant ValueType> : NSObject
 
+/*
+ -Wstrict-prototypes
+ 使用了非原型的函数声明时给出警告
+ */
 _Pragma("clang diagnostic push") \
 _Pragma("clang diagnostic ignored \"-Wstrict-prototypes\"") \
 typedef id _Nonnull (^RACReduceBlock)();
@@ -28,6 +37,11 @@ typedef ValueType _Nonnull (^RACGenericReduceBlock)();
 _Pragma("clang diagnostic pop")
 
 /// Returns an empty stream.
+//__kindof:表示当前类或者它子类
+//id坏处:
+//1.不能在编译的时候检查真实类型
+//2.返回值,没有提示
+
 + (__kindof RACStream<ValueType> *)empty;
 
 /// Lifts `value` into the stream monad.
